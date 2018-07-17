@@ -4,7 +4,7 @@ LABEL maintainer "Denish Patel <denish.j.patel@gmail.com>"
 
 ENV PG_VERSION 0.9.1-beta1
 
-ADD https://github.com/denishpatel/pgmodeler/v${PG_VERSION}.tar.gz /usr/local/src/
+ADD https://github.com/denishpatel/pgmodeler/blob/master/v${PG_VERSION}.tar.gz /usr/local/src/
 WORKDIR /usr/local/src/
 
 RUN if [ ! -d pgmodeler-${PG_VERSION} ]; then tar xvzf v${PG_VERSION}.tar.gz; fi \
